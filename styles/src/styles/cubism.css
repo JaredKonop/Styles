@@ -1,0 +1,23 @@
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px; /* Adjust as needed */
+}
+
+.grid-item {
+  grid-column: span 1;
+}
+
+.grid-item:nth-child(odd) {
+  grid-row: span 2; /* Staggered effect for odd items */
+}
+
+.grid-item:nth-child(even) {
+  grid-row: span 1; /* Regular height for even items */
+}
+
+.image {
+  width: 100%;
+  height: auto;
+  display: block;
+}

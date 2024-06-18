@@ -1,0 +1,28 @@
+.carousel-container {
+  width: 80%;
+  margin: auto;
+  padding: 20px;
+}
+
+.legend {
+  text-align: center;
+  font-size: 1.5em;
+  color: #fff;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 10px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  margin: 0;
+}
+
+/* Custom animation for image transitions */
+.carousel .slide {
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.carousel .slide.selected {
+  opacity: 1;
+}
